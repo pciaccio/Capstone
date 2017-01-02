@@ -2,9 +2,9 @@
 
 This is the final project of the Capstone for the Coursera Data Science Specialization.
 
-The Final Presentation is found in: https://pciaccio.github.io/DataProducts/Presentation.html#/
+The Final Presentation is found in: http://rpubs.com/pciaccio/239047
 
-The Final App is found in: https://pciaccio.shinyapps.io/Harder_Weight/
+The Final App is found in: https://pciaccio.shinyapps.io/CAPSTONE/
 
 ###  Files used in the project
 
