@@ -1,4 +1,5 @@
- Coursera Data Science Specialization Capstone Project
+
+Coursera Data Science Specialization Capstone Project
 
 This is the final project of the Capstone for the Coursera Data Science Specialization.
 
@@ -12,7 +13,8 @@ The Final R Code for the shiny app is found in the file: Capstone app.R
 ###  Input Files
 
 There are 5 input files that are used by the shiny application that have been uploaded onto this repository.
-Four Words.csv, Three Words.csv, Two Words.csv, and One Word.csv. These files contain the 2-,3-,4-, and 5-grams and their frequencies used in the app.
+
+Four Words.csv, Three Words.csv, Two Words.csv, and One Word.csv, these files contain the 2-,3-,4-, and 5-grams and their frequencies used in the app.
 
 ### N-gram Files
 
