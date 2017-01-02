@@ -1,4 +1,4 @@
-# Coursera Data Science Specialization Capstone Project
+ Coursera Data Science Specialization Capstone Project
 
 This is the final project of the Capstone for the Coursera Data Science Specialization.
 
@@ -18,7 +18,7 @@ Four Words.csv, Three Words.csv, Two Words.csv, and One Word.csv. These files co
 
 There are two files that create the input files listed above: Create 5-gram Excel File.R and Create other n-gram Excel Files.R.
 
-#### Inappropriate words file
+### Inappropriate Words File
 
 There is a file that is used to delete inappropriate words from the corpus: curse.txt.
 
