@@ -1,0 +1,72 @@
+Coursera Data Science Capstone Project: Word Prediction
+========================================================
+author: Priscilla Ciaccio
+date: January 1, 2017
+autosize: true
+
+Coursera Data Science Specialization Capstone Project
+========================================================
+
+This is the Capstone Project for the Coursera Data Science Specialization.
+
+The corporate partner in the Capstone project is SwiftKey.  SwiftKey builds a smart keyboard that makes it easier for people to type on their mobile devices using predictive text models.  
+
+The purpose of this project it to create a Shiny application that predicts the next word in a phrase, like those used by SwiftKey. 
+
+The Prediction app can be found at:
+
+The code for the app and the files used by the app can be found at: https://github.com/pciaccio/Capstone
+
+Background Information
+========================================================
+
+The data used in this project comes from a SwiftKey dataset (https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip) that should be downloaded from the Coursera website.  
+
+The zip file contains data in 4 different languages (English, German, Russian and Finnish).  
+
+For this project I will be using the English version of the data which can be found in the file "final/en_US".
+
+The data also comes from 3 sources: blogs (en_US.blogs.txt), twitter (en_US.twitter.txt), and news (en_US.news.txt).
+
+
+Prediction Algorithm
+========================================================
+
+The basis of my Prediction algorithm is using a data frame of 2-, 3-, 4-, and 5-grams and their frequencies to predict the next word in a 1, 2, 3, and 4 word phrase.
+
+After the 3 documents (from the last slide) are downloaded they must be cleaned. Numbers, punctuation, and extra white spaces are removed.  After that all of the characters in documents are converted to lower case.  And finally curses and inappropriate words are removed from the documents.  
+
+The documents were then turned n-gram data frames with their frequencies. These were then saved as individual excel files (.csv)
+
+These files were then stored in my github repository to be used in the application.
+
+
+
+
+
+
+
+How to use the Application
+========================================================
+
+The shiny application reads in the excel files for 2-, 3-, 4-, and 5-gram frequencies.
+
+Based on the number of words entered into the app, the program chooses which excel file to use for the frequencies. 
+
+If the entire phrase was not found in the excel file, the first word of the phrase is remove and the next excel file is checked. 
+
+If this recursion gets to a single word that was not found in the 2-gram file, the most popular word, not in the english stopwords list in the tm library, is used.
+
+The app does not depend on a submission or activation, as you type in the input text box as prediction for the next word is shown in real time.
+
+The loading of the program takes a little longer than I would like, but once you start entering text, the app does not have much of a delay.
+
+
+
+
+
+
+
+
+
+
